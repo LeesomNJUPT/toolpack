@@ -8,12 +8,12 @@
 // Parameter: PointCloudT cloud
 // Parameter: std::string txtName
 //************************************
-bool Common::pCloud2txt(PointCloudT cloud, std::string txtName)
+bool pCloud2txt(PointCloudT cloud, std::string txtName)
 {
 	int Num = cloud.points.size();
-	std::vector<string> X;
-	std::vector<string> Y;
-	std::vector<string> Z;
+	std::vector<std::string> X;
+	std::vector<std::string> Y;
+	std::vector<std::string> Z;
 	for (size_t i = 0; i < cloud.points.size(); ++i)
 	{
 		X.push_back(std::to_string(cloud.points[i].x));
